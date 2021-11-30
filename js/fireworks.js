@@ -1,6 +1,5 @@
 var S = {
   init: function () {
-	var m = 0;
     var action = window.location.href,
         i = action.indexOf('?a=');
 
@@ -14,11 +13,7 @@ var S = {
     }
 
     S.Drawing.loop(function () {
-	  m++;
       S.Shape.render();
-	  if(m==1110){
-        window.location.href="BirthdayCake.html";
-      }
     });
   }
 };
